@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Android Development</title>
+</head>
+<style>
+  
+  *{
+    margin: 0;
+    padding: 0;
+  }
+    #wDBackground{
+        background-image: url('images/back.png');
+        background-size:cover ;
+    }
+    .navbar{
+        background-color: rgba(230, 228, 229, 0.3);
+    }
+    .navbar-brand{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    border: 3px rgb(233, 146, 160) solid;
+    border-radius: 4px;
+    padding:0;
+    background-color: rgb(17, 17, 17,0.3);
+    }
+</style>
+<body id="wDBackground">    
+     <!-- navbar -->
+    <nav class="navbar navbar-light mb-5">
+        <div class="logo">
+            <a href="index.html" class="navbar-brand ml-5 px-2 text-white"><h3>JG</h3></a>
+        </div>
+        <div class="dropdown mr-5">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Project list
+            </button>
+            <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#ReadOut">ReadOut</a>
+            </div>
+          </div>
+    </nav>
+
+      <h1 class="text-white bg-danger p-2 mb-5  text-center" style="font-size:2.2em">Welcome to Android Development Projects</h1>
+  
+    <div class="container mt-5 p-0" style="background-color: rgba(65, 64, 64, 0.4);"> 
+        <div class="row mb-5 mx-5">
+            <div class="col-xs-12 col-md-4">
+                <div class="card" id="ReadOut">
+                    <img class="card-img-top" src="images/read_out.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">ReadOut</h5>
+                      <p class="card-text">The application displays the list of popular books with their description. One can also add and remove books from favorites.</p>
+                      <a href="https://www.mediafire.com/file/m0wkcjdfx2ua5nh/ReadOut.apk/file" class="btn btn-danger"><i class="fas fa-download"></i> Download now</a>
+                    </div>
+                  </div>
+            </div>
+        </div> 
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
