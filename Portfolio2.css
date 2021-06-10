@@ -950,6 +950,7 @@ footer{
     }
     .chat_box{
         width: 75vw;
+        height: 70wh;
     }
 }
 @media (max-width: 500px) {
