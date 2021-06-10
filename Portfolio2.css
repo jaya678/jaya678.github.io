@@ -192,6 +192,38 @@ section .title::after{
     filter: brightness(90%);
 }
 
+/* ChatBot */
+.chat_icon{
+    position: fixed;
+    right: 18px;
+    top: 10%;
+    font-size: 4rem;
+    color:rgb(250, 125, 165);
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.3 ease out;
+}
+.chat_icon:hover{
+    filter: brightness(110%);
+    transform: scale(1.1);
+}
+.chat_box{
+    position:fixed;
+    right: 18px;
+    top: 20.5%;
+    width: 400px;
+    height: 75vh;
+    background-color: #dedede;
+    z-index: 10000;
+    border: 1px crimson solid;
+    box-shadow: 2px 2px 25px crimson;
+    border-radius: 25px;
+    transition: all 0.3 ease out;
+    transform: scaleY(0);
+}
+.chat_box.active{
+    transform: scaleY(1);
+}
   
 /* home section styling */
 .home{
@@ -278,9 +310,7 @@ section .title::after{
     background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-image: url("images/Subtle-Stripes.svg");
 }
-/*.about .title::after{
-    content: "who i am";
-}*/
+
 .about .about-content .left{
     width: 30%;
 }
@@ -918,6 +948,9 @@ footer{
         color: #fff;
         text-align: center;
     }
+    .chat_box{
+        width: 75vw;
+    }
 }
 @media (max-width: 500px) {
     .home .home-content .text-2{
@@ -988,3 +1021,5 @@ footer{
     background: linear-gradient(to left, #720941, #ff0084); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   }
+
+  
