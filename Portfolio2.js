@@ -17,6 +17,12 @@ $(document).ready(function(){
         }
     });
 
+    // Chatbot
+    $('.chat_icon').click(function(){
+        $('.chat_box').toggleClass('active')
+    });
+
+
     // slide-up script
     $('.scroll-up-btn').click(function(){
         $('html').animate({scrollTop: 0});
@@ -83,18 +89,19 @@ $(document).ready(function(){
         modalBg.classList.remove('bg-active');
       });
 
-
-      $(".animated-progress span").each(function () {
-        $(this).animate(
-          {
-            width: $(this).attr("data-progress") + "%",
-          },
-          1000
-        );
-        $(this).text($(this).attr("data-progress") + "%");
-      });
-
 });
+
+         // progress bar
+         
+         $(".animated-progress span").each(function () {
+            $(this).animate(
+              {
+                width: $(this).attr("data-progress") + "%",
+              },
+              1000
+            );
+            $(this).text($(this).attr("data-progress") + "%");
+          });
 
     var preloader = document.getElementById('loading');
      function loader(){
